@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dinesh Kumar — Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Dinesh Kumar .B</h1>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h2>Hello — I'm Dinesh Kumar .B</h2>
+          <p>Frontend developer focused on clean, accessible interfaces and simple, maintainable code.</p>
+          <p class="cta-row">
+            <a class="button" href="#projects">See my work</a>
+            <a class="button ghost" href="#contact">Get in touch</a>
+          </p>
+        </div>
+        <div class="hero-img" aria-hidden="true">
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h3>About me</h3>
+      <p>I build responsive websites and web apps. I enjoy learning new tools, solving UI problems, and writing code that's easy to understand.</p>
+      <ul class="skills">
+        <li>HTML &amp; CSS</li>
+        <li>JavaScript</li>
+        <li>React (basics)</li>
+        <li>Git</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="container projects">
+      <h3>Projects</h3>
+      <div class="grid">
+        <article class="card">
+          <h4>Project One</h4>
+          <p>Small description of the project. What it does and the tech used.</p>
+          <p class="card-links"><a href="#">Live</a> • <a href="#">Code</a></p>
+        </article>
+        <article class="card">
+          <h4>Project Two</h4>
+          <p>Small description of the project. What it does and the tech used.</p>
+          <p class="card-links"><a href="#">Live</a> • <a href="#">Code</a></p>
+        </article>
+        <article class="card">
+          <h4>Project Three</h4>
+          <p>Small description of the project. What it does and the tech used.</p>
+          <p class="card-links"><a href="#">Live</a> • <a href="#">Code</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h3>Contact</h3>
+      <p>If you'd like to work together or ask a question, drop a note.</p>
+      <form class="contact-form" action="#" onsubmit="alert('This is a demo form — replace with your backend or mailto.'); return false;">
+        <label>
+          <span>Name</span>
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" required>
+        </label>
+        <label>
+          <span>Message</span>
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button class="button" type="submit">Send message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Dinesh Kumar .B — Built with HTML &amp; CSS</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
